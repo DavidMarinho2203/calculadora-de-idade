@@ -1,0 +1,226 @@
+// Importando cores.
+@import "./Cores/cores.scss";
+
+// Importando fonts.
+@import "./fonts/fonts.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $font-family;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+main {
+    width: 100%;
+    height: 100%;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $cinza-claro-cor;
+
+    #container__Principal {
+        width: 256px;
+        padding: 20px 0;
+        background-color: $branco-cor;
+        border-radius: 20px 20px 100px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 40px;
+        padding: 50px 20px 50px;
+
+
+        #container__MandarInformacoes {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            gap: 50px;
+
+            #container__Informacoes {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .cotainer__ForEInput {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: start;
+                    gap: 5px;
+                    color: $cinza-esfumacado;
+                    font-weight: $weight-700;
+
+                    .error{  // classe detinada para caso ocorra um error.
+                        border-color: $error-cor;
+                    }
+
+                    label {
+                        text-transform: uppercase;
+                        font-size: 10px;
+                        letter-spacing: 2px;
+                        font-weight: $weight-800;
+                    }
+
+                    input {
+                        border: 1px solid $cinza-claro-cor;
+                        border-radius: 5px;
+                        color: $preto;
+                        font-weight: $weight-700;
+                        width: 3.5em;
+                        font-size: 1.1em;
+                        line-height: 30px;
+                        padding: 8px 0px 8px 8px;
+                        
+                    }
+
+
+                    .local_error {
+                        width: 9em;
+                        height: 20px;
+                        color: $error-cor;
+                        font-size: 8px;
+                        text-align: center;
+                    }
+
+
+                }
+            }
+
+            #container__Linha {
+                align-items: end;
+                position: relative;
+
+                #linha {
+                    height: 1px;
+                    background-color: $cinza-claro-cor;
+                }
+
+                button {
+                    position: absolute;
+                    right: 42%;
+                    top: -30px;
+                    align-items: end;
+                    border: transparent;
+                    border-radius: 50%;
+                    padding: 15px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $primeira-cor;
+
+                    img {
+                        width: 30px;
+                    }
+                }
+
+            }
+        }
+
+        #container__MostrarInformacoes {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 50px;
+
+            #container__Resultado {
+                .container__Resultado {
+                    font-size: 2.5rem;
+                    font-weight: $weight-800;
+
+                    .resultado {
+                        color: $primeira-cor;
+                    }
+                }
+
+            }
+
+        }
+
+
+    }
+
+
+}
+
+footer {
+    width: 100%;
+    padding: 1em 0;
+
+    p {
+        width: 20em;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 0.8em;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 768px) {
+    main {
+        #container__Principal {
+            width: 20rem;
+
+            #container__MandarInformacoes {
+
+                #container_Informacoes {
+                    justify-content: space-between;
+
+                    .cotainer__ForEInput {
+                        input {
+                            width: 4em;
+                            font-size: 1.3em;
+                        }
+                        .local_error {
+                            width: 20em;
+                        }
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1440px) {
+    main {
+        #container__Principal {
+            width: 30rem;
+
+            #container__MandarInformacoes {
+                
+
+                #container__Informacoes {
+                    width: 70%;
+                    .cotainer__ForEInput {
+                        input {
+                            width: 4em;
+                            font-size: 1.4em;
+                        }
+                        .local_error {
+                            width: 13em;
+                        }
+                    }
+
+                }
+
+                #container__Linha {
+                    button {
+                        right: 0%;
+                    }
+                }
+            }
+        }
+    }
+
+}
