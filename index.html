@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+  <link rel="stylesheet" href="./assets/css/estilo.css" />
+  <script src="./assets/js/index.js" defer></script>
+  <title>Frontend Mentor | Calculadora de idade</title>
+</head>
+
+<body>
+  <main>
+    <section id="container__Principal">
+      <form id="container__MandarInformacoes">
+        <div id="container__Informacoes">
+          <div class="cotainer__ForEInput">
+            <label for="inDia">Dia</label>
+            <input type="number" id="inDia" placeholder="DD" />
+            <p class="local_error"></p>
+          </div>
+          <div class="cotainer__ForEInput">
+            <label for="inMes">Mês</label>
+            <input type="number" id="inMes" placeholder="MM" />
+            <p class="local_error"></p>
+          </div>
+          <div class="cotainer__ForEInput">
+            <label for="inAno">Ano</label>
+            <input type="number" id="inAno" placeholder="YYYY" />
+            <p class="local_error"></p>
+          </div>
+        </div>
+        <div id="container__Linha">
+          <div id="linha"></div>
+          <button type="submit">
+            <img src="./assets/img/icon-arrow.svg" alt="" />
+          </button>
+        </div>
+      </form>
+
+      <article id="container__MostrarInformacoes">
+
+        <div id="container__Resultado">
+          <div class="container__Resultado">
+            <span class="resultado">--</span>
+            Ano(s)
+          </div>
+          <div class="container__Resultado">
+            <span class="resultado">--</span>
+            Mese(s)
+          </div>
+          <div class="container__Resultado">
+            <span class="resultado">--</span>
+            Dia(s)
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <p>
+      Todos os direitos reservados para o desenvolvedor
+      <strong>David Beckham</strong>
+    </p>
+  </footer>
+</body>
+
+</html>
