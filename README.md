@@ -17,14 +17,15 @@ Este desafio foi criado para afiar minhas habilidades de JavaScript, validação
 - CSS
 - JavaScript
 
-##### Execeções:
+##### Exceções:
 
 - NPM
 - pacote Sass
 
 
 ## Como Usar
-1. Abra uma pasta em seu *Explorador de Arquivos*:
+1. Abra o prompt de comando e escolha pasta que você quer adicionar o arquivo:
+   **cd "caminho do local da pasta"**
 
 1. Clone o repositório:
    git clone https://github.com/DavidMarinho2203/calculadora-de-idade
